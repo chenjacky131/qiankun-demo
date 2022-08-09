@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "examples:install": "npm-run-all --serial install:*",
+    "install:main": "cd main && yarn",
+    "install:app1": "cd app1 && yarn",
+    "install:app2": "cd app2 && yarn",
+    "start:main": "cd main && yarn start",
+    "start:app1": "cd app1 && yarn start",
+    "start:app2": "cd app2 && yarn start"
   },
   "repository": {
     "type": "git",
@@ -16,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/chenjacky131/qiankun-demo/issues"
   },
-  "homepage": "https://github.com/chenjacky131/qiankun-demo#readme"
+  "homepage": "https://github.com/chenjacky131/qiankun-demo#readme",
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  }
 }
