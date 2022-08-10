@@ -9,9 +9,9 @@
     "install:main": "cd main && yarn",
     "install:app1": "cd app1 && yarn",
     "install:app2": "cd app2 && yarn",
-    "start:main": "cd main && yarn start",
-    "start:app1": "cd app1 && yarn start",
-    "start:app2": "cd app2 && yarn start"
+    "start:main": "cd main && yarn serve",
+    "start:app1": "cd app1 && yarn serve",
+    "start:app2": "cd app2 && yarn serve"
   },
   "repository": {
     "type": "git",
